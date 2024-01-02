@@ -101,11 +101,12 @@ body{
 }
 
 #main-container .sub-container .deleteButton .selectedDelete{ 
-background-color: #E53935;
+background-color: #DC5780;
 border: none;
 color: white;
 padding: 15px 20px;
 cursor: pointer;
+font-weight: bold;
 
 }
 /* Input container */

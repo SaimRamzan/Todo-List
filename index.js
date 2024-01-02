@@ -14,7 +14,7 @@ input.addEventListener('keyup',(event)=>{
             <div class="newCreateLine">
             <input id="checkbox" type="checkbox">
             <p class="paragraph">${input}</p>
-            <i id="delete" class="fa-solid fa-circle-xmark fa-lg"></i>
+            <i id="delete" class="fa-solid fa-circle-xmark fa-lg" style="color: #DC5780;"></i>
         </div>`
         createList.querySelector('#delete').addEventListener('click', ()=>{
             deleteButton(createList)
@@ -38,7 +38,7 @@ submitButton.addEventListener('click',()=>{
         <div class="newCreateLine">
         <input id="checkbox" type="checkbox">
         <p class="paragraph">${input}</p>
-        <i id="delete" class="fa-solid fa-circle-xmark fa-lg"></i>
+        <i id="delete" class="fa-solid fa-circle-xmark fa-lg" style="color: #DC5780;"></i>
     </div>`
     createList.querySelector('#delete').addEventListener('click', ()=>{
         deleteButton(createList)
