@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+    isolation: isolate;
+}
+body::before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(256,256,256, 0.8);
+    z-index: -1;
+}
+.main-header{
+    width: 100%;
+    height: 100px;
+    background-color: #4553B1;
+    display: block;
+}
+#main-container .sub-container{
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    min-height: 600px;
+    margin-top: -52px;
+    margin-inline: auto;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    margin-bottom: 42px;
+}
+#main-container .sub-container .wrapper{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 24px;
+}
+#main-container .sub-container .header h2 {
+    color: white;
+    display: flex;
+    background-color: #4553B1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    font-size: 40px;
+    border-radius: 9px 9px 0 0;
+}
+#main-container .sub-container .inputArea {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+}
+
+#main-container .sub-container .inputArea input{
+    outline: none;
+    margin-top: 0px;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #4553B1;
+}
+#main-container .sub-container .inputArea .submit{
+    padding: 15px 25px;
+    margin-left: 20px;
+    background-color: #4652B0;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor:pointer;
+    outline: none;
+    white-space: nowrap;
+}
+#main-container .sub-container .lineByLine{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#main-container .sub-container .newCreateLine{
+    display: flex;
+    align-items: left;
+    border-bottom: 1px solid rgb(218, 210, 210);
+    flex-direction: row;
+}
+#main-container .sub-container .newCreateLine #checkbox{
+    width: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-container .sub-container .deleteButton{
+    display: flex;
+    bottom: 0;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+
+#main-container .sub-container .deleteButton .selectedDelete{ 
+background-color: #E53935;
+border: none;
+color: white;
+padding: 15px 20px;
+
+}
+/* Input container */
+.inputArea {
+    position: relative;
+  }
+  
+  /* Input field */
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  /* Input label */
+  .input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: rgba(204, 204, 204, 0);
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input highlight */
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #4553B1;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input field:focus styles */
+  .input-field:focus + .input-label {
+    top: -20px;
+    font-size: 12px;
+    color: #4553B1;
+  }
+
+#main-container .sub-container .newCreateLine p{
+    margin-left: 15px;
+}
+
+#main-container .sub-container .newCreateLine i{
+    display: flex;
+    align-items:center;
+    justify-content: right;
+    margin-left: auto;
+    cursor: pointer;
+    color: #E53935;
+}
+

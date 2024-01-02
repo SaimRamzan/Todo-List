@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="main-header"></div>
+        <div class="sub-container">
+            <div class="header">
+                <h2>Todo List</h2>
+            </div>
+
+            <div class="wrapper">
+                <div class="inputArea">
+                    <input id="input" placeholder="Enter text" class="input-field" type="text">
+                    <label for="input-field" class="input-label">Add a new Task</label>
+                    <span class="input-highlight"></span>
+                    <button class="submit">Add Todo</button>
+                </div>
+                <div class="lineByLine">
+                    <div class="newCreateLine">
+                        <input id="checkbox" type="checkbox">
+                        <p class="paragraph">Hello</p>
+                        <i class="fa-solid fa-circle-xmark fa-lg"></i>
+                    </div>
+                </div>
+                <div class="deleteButton">
+                    <button class="selectedDelete">Delete Selected</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/3d4b6a8edf.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
