@@ -11,8 +11,7 @@ body{
 .main-header{
     width: 100%;
     height: 100px;
-    /* background-color: #4553B1; */
-    background-color: #DC5780;
+    background-color: #4553B1;
     display: block;
 }
 #main-container .sub-container{
